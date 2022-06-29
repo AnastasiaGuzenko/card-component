@@ -1,61 +1,84 @@
 body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
+  background-color: rgba(242, 233, 226, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 14px;
-  background-color: #fcf2eb;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0.1px;
 }
 
-.content {
-  width: 550px;
-  margin: 160px auto;
-  display: flex;
-  background-color: #FFFFFF;
-  border-radius: 18px;
-}
-
-.picture_cover {
-  height: 400px;
-}
-
-.card {
- margin: 30px;
-}
-
-.card__description_product-name {
-  font-size: 26px;
-  font-weight: 600;
-}
-
-.card__product-price {
+.main {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-
-.card__product-price_now {
-  font-size: 26px;
-  font-weight: 600;
-  color: #3D8168;
-  margin-right: 20px;
-
-}
-
-.card__product-price_before {
-  text-decoration: line-through;
-}
-
-.card__btn {
+.card {
+  width: 600px;
+  height: 460px;
+  overflow: hidden;
   display: flex;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 15px;
+}
+
+.picture {
+  width: 50%;
+  object-fit: cover;
+}
+
+.decsription {
+  width: 50%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.card__btn_add-to-cart {
+.decsription__title {
+  font-family: 'Fraunces';
+  font-weight: 700;
+  font-size: 30px;
+  color: hsl(212, 21%, 14%);
+}
+
+.decsription__price {
+  display: flex;
+  font-family: 'Fraunces';
+  align-items: center;
+}
+
+.decsription__price-now {
+  font-size: 26px;
+  color: rgba(61, 129, 104, 1);
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.decsription__price-old {
+  text-decoration: line-through;
+}
+
+.button {
   width: 100%;
-  padding: 10px;
-  color: #FFFFFF;
-  background-color: #3D8168;
-  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  background-color: rgba(61, 129, 104, 1);
   border-style: none;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.button__icon {
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: hsl(158, 37%, 28%);
 }
